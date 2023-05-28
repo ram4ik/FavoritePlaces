@@ -18,6 +18,7 @@
 		5EC419C52A23CAC800D61133 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC419C42A23CAC800D61133 /* HomeView.swift */; };
 		5EC419C72A23D85E00D61133 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC419C62A23D85E00D61133 /* LazyView.swift */; };
 		5EC419C92A23DA0D00D61133 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC419C82A23DA0D00D61133 /* LocationManager.swift */; };
+		5EC419CC2A23DD1D00D61133 /* FavoritePlacesDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5EC419CA2A23DD1D00D61133 /* FavoritePlacesDataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		5EC419C42A23CAC800D61133 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		5EC419C62A23D85E00D61133 /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
 		5EC419C82A23DA0D00D61133 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		5EC419CB2A23DD1D00D61133 /* FavoritePlacesDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FavoritePlacesDataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				5EC419C82A23DA0D00D61133 /* LocationManager.swift */,
+				5EC419CA2A23DD1D00D61133 /* FavoritePlacesDataModel.xcdatamodeld */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EC419BF2A23BFEE00D61133 /* PlacesListViewModel.swift in Sources */,
+				5EC419CC2A23DD1D00D61133 /* FavoritePlacesDataModel.xcdatamodeld in Sources */,
 				5EC419C52A23CAC800D61133 /* HomeView.swift in Sources */,
 				5EC419C32A23C50F00D61133 /* AddNewPlaceView.swift in Sources */,
 				5EC419AE2A23B74E00D61133 /* ContentView.swift in Sources */,
@@ -391,6 +395,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5EC419CA2A23DD1D00D61133 /* FavoritePlacesDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5EC419CB2A23DD1D00D61133 /* FavoritePlacesDataModel.xcdatamodel */,
+			);
+			currentVersion = 5EC419CB2A23DD1D00D61133 /* FavoritePlacesDataModel.xcdatamodel */;
+			path = FavoritePlacesDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5EC419A02A23B74E00D61133 /* Project object */;
 }
