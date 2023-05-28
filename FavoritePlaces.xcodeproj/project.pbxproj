@@ -12,6 +12,7 @@
 		5EC419B02A23B74F00D61133 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EC419AF2A23B74F00D61133 /* Assets.xcassets */; };
 		5EC419B32A23B74F00D61133 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EC419B22A23B74F00D61133 /* Preview Assets.xcassets */; };
 		5EC419BD2A23BC9A00D61133 /* PlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC419BC2A23BC9A00D61133 /* PlaceViewModel.swift */; };
+		5EC419BF2A23BFEE00D61133 /* PlacesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC419BE2A23BFEE00D61133 /* PlacesListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		5EC419AF2A23B74F00D61133 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EC419B22A23B74F00D61133 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5EC419BC2A23BC9A00D61133 /* PlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewModel.swift; sourceTree = "<group>"; };
+		5EC419BE2A23BFEE00D61133 /* PlacesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				5EC419BC2A23BC9A00D61133 /* PlaceViewModel.swift */,
+				5EC419BE2A23BFEE00D61133 /* PlacesListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EC419BF2A23BFEE00D61133 /* PlacesListViewModel.swift in Sources */,
 				5EC419AE2A23B74E00D61133 /* ContentView.swift in Sources */,
 				5EC419BD2A23BC9A00D61133 /* PlaceViewModel.swift in Sources */,
 				5EC419AC2A23B74E00D61133 /* FavoritePlacesApp.swift in Sources */,
