@@ -13,7 +13,7 @@ struct HomeView: View {
     var body: some View {
         NavigationStack {
             VStack(spacing: 30) {
-                // topHeader()
+                topHeader()
                 if !viewModel.places.isEmpty {
                     // placesView()
                 } else {
@@ -28,10 +28,37 @@ struct HomeView: View {
             }
         }
     }
+    
+    private func topHeader() -> some View {
+        HStack {
+            Text("Favorite Places")
+                .font(.title)
+            Spacer()
+            
+            Button {
+                viewModel.showAddSheet.toggle()
+            } label: {
+                Image(systemName: "plus.circle.fill")
+                    .font(.largeTitle)
+                    .foregroundStyle(.primary)
+                    .tint(Color.orange.gradient)
+            }
+            .sheet(isPresented: $viewModel.showAddSheet, onDismiss: {
+                viewModel.fetchPlaces()
+            }) {
+                AddNewPlaceView()
+                    .presentationDetents([.large])
+                    .presentationDragIndicator(.hidden)
+                    .presentationCornerRadius(20)
+                    .presentationBackground(.ultraThinMaterial)
+            }
+        }
+    }
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+            .preferredColorScheme(.dark)
     }
 }
