@@ -20,8 +20,10 @@ class AddPlaceViewModel: ObservableObject {
     @Published var image: Image?
     @Published var imageData: Data?
     
-    func savePlace() {
-        
+    func savePlace() async {
+        if let data = imageData {
+            CoreDataManager.shared.save(name: name, notes: notes, city: city, country: country, imageData: data)
+        }
     }
     
     func getImageFor(placeName: String) async {
