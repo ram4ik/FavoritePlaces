@@ -19,6 +19,7 @@
 		5EC419C72A23D85E00D61133 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC419C62A23D85E00D61133 /* LazyView.swift */; };
 		5EC419C92A23DA0D00D61133 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC419C82A23DA0D00D61133 /* LocationManager.swift */; };
 		5EC419CC2A23DD1D00D61133 /* FavoritePlacesDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5EC419CA2A23DD1D00D61133 /* FavoritePlacesDataModel.xcdatamodeld */; };
+		5EC419CE2A24601000D61133 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC419CD2A24601000D61133 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		5EC419C62A23D85E00D61133 /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
 		5EC419C82A23DA0D00D61133 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		5EC419CB2A23DD1D00D61133 /* FavoritePlacesDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FavoritePlacesDataModel.xcdatamodel; sourceTree = "<group>"; };
+		5EC419CD2A24601000D61133 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			children = (
 				5EC419C82A23DA0D00D61133 /* LocationManager.swift */,
 				5EC419CA2A23DD1D00D61133 /* FavoritePlacesDataModel.xcdatamodeld */,
+				5EC419CD2A24601000D61133 /* CoreDataManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				5EC419AC2A23B74E00D61133 /* FavoritePlacesApp.swift in Sources */,
 				5EC419C12A23C15200D61133 /* AddPlaceViewModel.swift in Sources */,
 				5EC419C92A23DA0D00D61133 /* LocationManager.swift in Sources */,
+				5EC419CE2A24601000D61133 /* CoreDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
