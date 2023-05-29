@@ -51,4 +51,31 @@ class CoreDataManager {
         
         return places
     }
+    
+    func save(name: String, notes: String, city: String, country: String, imageData: Data) {
+        let place = Place(context: context)
+        place.id = UUID()
+        place.name = name
+        place.city = city
+        place.country = country
+        place.notes = notes
+        place.image = imageData
+        
+        saveContext()
+    }
+    
+    func delete(id: UUID) {
+        let fetchRequest: NSFetchRequest<Place> = Place.fetchRequest()
+        fetchRequest.predicate = NSPredicate.init(format: "id=%@", id.uuidString)
+        
+        do {
+            let fetchedPlaces = try context.fetch(fetchRequest)
+            for pl in fetchedPlaces {
+                context.delete(pl)
+            }
+            saveContext()
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
+    }
 }
